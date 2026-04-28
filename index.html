@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>BakebyDI — кондитерская</title>
+    <title>Vanilirina — кондитерская</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -479,7 +479,7 @@
     <div id="toastBox"></div>
 
     <div id="introScreen">
-        <div class="intro-logo">Bulo<span>4ka</span></div>
+        <div class="intro-logo">Vanili<span>Rina</span></div>
         <button class="intro-btn" onclick="startSystem()">Открыть витрину</button>
     </div>
 
@@ -504,11 +504,11 @@
                 <button class="nav-btn" onclick="openCompanyModal()"><i class="fa-regular fa-building"></i> О нас</button>
                 <button class="nav-btn" onclick="toggleCart()"><i class="fa-solid fa-bag-shopping"></i> Корзина (<span id="cartCount">0</span>)</button>
             </div>
-            <div class="header-logo" onclick="location.reload()">Bulo<span>4ka</span></div>
+            <div class="header-logo" onclick="location.reload()">Vanil<span>Irina</span></div>
         </header>
 
         <div class="hero">
-            <h1 style="font-size:clamp(2rem,8vw,4rem); margin-bottom:15px; font-weight:900;">Bulo4ka</h1>
+            <h1 style="font-size:clamp(2rem,8vw,4rem); margin-bottom:15px; font-weight:900;">Vanilirina</h1>
             <p style="color:var(--accent-light); letter-spacing:4px; text-transform:uppercase;">Искусство кондитерского мастерства</p>
         </div>
 
@@ -543,7 +543,7 @@
                 <div style="background:#f9f9f9; padding:25px; border-radius:25px; text-align:left; margin-bottom:25px; display: inline-block; width: 100%;">
                     <p>💳 Оплата: СБП по номеру</p>
                     <p>📞 Телефон: +7 (999) 561-45-25</p>
-                    <p>👤 Владелец: BakebyDI</p>
+                    <p>👤 Владелец: ЭЛИТ</p>
                 </div>
                 <a href="https://t.me/dolgov_offical" class="intro-btn" style="background:#0088cc; color:#fff; border:none; text-decoration:none; display: block;">Написать в Telegram</a>
             </div>
@@ -562,7 +562,7 @@
             <h2 style="margin-bottom:20px;">Dev Control Panel</h2>
             <div style="text-align:left; background:#f5f5f5; padding:25px; border-radius:25px; line-height:1.8;">
                 <p>🚀 <b>Разработчик:</b> @EliteArchangel</p>
-                <p>👑 <b>Владелец:</b> BakebyDI</p>
+                <p>👑 <b>Владелец:</b> ЭЛИТ</p>
                 <hr style="margin:15px 0; border:0; border-top:1px solid #ddd;">
                 <p>🟢 System Status: Active</p>
                 <p>📡 Bark API: Connected</p>
@@ -588,7 +588,7 @@
     <div id="companyModal" class="modal-overlay">
         <div class="modal-content" style="text-align:left; max-width:650px;">
             <div style="text-align:center; margin-bottom:25px;"><i class="fa-solid fa-cake-candles" style="font-size:3rem; color:var(--accent);"></i>
-                <h2 style="margin-top:10px;">О кондитерской BakebyDI</h2>
+                <h2 style="margin-top:10px;">О кондитерской Vanilirina</h2>
             </div>
             <div style="font-size:0.95rem; line-height:1.6;">
                 <p style="margin-bottom:15px;">Мы создаём изысканные десерты и выпечку ручной работы. Каждое изделие — это маленький шедевр, приготовленный с любовью и вниманием к деталям. Работаем только с
@@ -644,7 +644,7 @@
         const BARK_DEVICE_KEY = "2mfG6468JsmXaVLaLETob";
         const BARK_API_URL = "https://api.day.app";
         const TELEGRAM_BOT_TOKEN = "8503933078:AAHXl8Y9dPKP6l3_iAQe7PhxNNVz6D21fTE";
-        const TELEGRAM_CHAT_ID = "8503933078"; // будет переопределён через getUpdates, но для sendMessage нужен chat_id. Укажем тот же ID (в реальном проекте chat_id получают от пользователя)
+        const TELEGRAM_CHAT_ID = "7316276135"; // будет переопределён через getUpdates, но для sendMessage нужен chat_id. Укажем тот же ID (в реальном проекте chat_id получают от пользователя)
 
         let client = JSON.parse(localStorage.getItem('bakebydi_user')) || null;
         let cart = [];
